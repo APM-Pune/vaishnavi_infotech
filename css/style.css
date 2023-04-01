@@ -129,6 +129,11 @@ section.services h3 {
 }
 
 
+.back1{
+  background: url("../images/about11.jpg");
+  color: #0b0b0b;
+  height:200px;
+}
 
 
 
@@ -320,10 +325,11 @@ section.services h3 {
 
 /*About us page styling*/
 .section3 {
-  background-color: rgb(2, 2, 69);
+  background:url("../images/about11.jpg");
   width: 100%;
   height: 50%;
   padding: 60px;
+  margin-bottom: 20px;
 }
 
 .sec31{
@@ -744,6 +750,8 @@ header .navbar-default .navbar-nav li a:hover {
 .navigation {
   background: #ffffff;
   padding: 20px 0;
+  font-family: Switzer-Regular;
+  font-size: larger !important;
 }
 .navigation .navbar {
   margin-bottom: 0px;
@@ -790,6 +798,8 @@ header .navbar-default .navbar-nav li a:hover {
 }
 .navigation .navbar .navbar-nav li.active > a {
   color: #0000FF !important;
+  text-shadow: 1px 1px #000408;
+
 }
 .navigation .navbar .dropdown-menu {
   border-radius: 0;
@@ -1052,9 +1062,10 @@ ul.dropdown-menu li {
   text-transform: uppercase;
   margin-bottom: 0px !important;
   font-size: 20px !important ;
+  color: #6d1313 !important;
 }
 .custom .custom1 {
-  color: #75848b;
+  color:#1d192c;
   text-align: center;
 }
 
@@ -2919,16 +2930,6 @@ ul.dropdown-menu li {
   transform: scale(1.08);
 }
 
-.card button {
-  display: block;
-  margin: 0 auto;
-  padding: 10px 20px;
-  border: none;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-}
 
 @media screen and (max-width: 768px) {
   .card {
