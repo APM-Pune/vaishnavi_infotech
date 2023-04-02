@@ -1,10 +1,3 @@
-/**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
- */
-
 @charset "UTF-8";
 /*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Volkhov:ital@1&display=swap");
@@ -736,11 +729,11 @@ header .navbar-default {
   border: 0px;
 }
 header .navbar-default .navbar-nav {
-  padding-top: 10px;
+ 
 }
 header .navbar-default .navbar-nav li a {
   color: #333333;
-  padding: 10px 26px;
+  
   font-size: 15px;
 }
 header .navbar-default .navbar-nav li a:hover {
@@ -749,7 +742,6 @@ header .navbar-default .navbar-nav li a:hover {
 
 .navigation {
   background: #ffffff;
-  padding: 20px 0;
   font-family: Switzer-Regular;
   font-size: larger !important;
 }
@@ -760,10 +752,12 @@ header .navbar-default .navbar-nav li a:hover {
 .navigation .navbar-brand {
   padding-top: 5px;
   width: 20% !important;
-  height: 20%;
+  height: 10% !important;
 }
 .navbar-brand img {
-  width: 70%;
+  width: 100%;
+  height: 0%;
+  
 }
 .navigation .navbar-toggler {
   font-size: 36px;
@@ -776,7 +770,7 @@ header .navbar-default .navbar-nav li a:hover {
   border: 0px;
 }
 .navigation .navbar .navbar-nav {
-  padding-top: 10px;
+
 }
 @media (max-width: 992px) {
   .navigation .navbar .navbar-nav {
