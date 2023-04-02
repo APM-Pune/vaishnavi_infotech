@@ -1,146 +1,266 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-
-	<!-- Basic Page Needs
+  <!-- Basic Page Needs
   ================================================== -->
-	<meta charset="utf-8">
-	<title>Vaishnavi Infotech | Hardware</title>
+  <meta charset="utf-8" />
+  <title>Vaishnavi Infotech | web-service</title>
 
-	<!-- Mobile Specific Metas
+  <!-- Mobile Specific Metas
   ================================================== -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Creative Agency Bootstrap Template">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-	<meta name="author" content="Themefisher">
-	<meta name="generator" content="Themefisher Airspace Template v1.0">
-	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Creative Agency Bootstrap Template" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="author" content="Themefisher" />
+  <meta name="generator" content="Themefisher Airspace Template v1.0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+  <!-- Ionic Icon Css -->
+  <link rel="stylesheet" href="plugins/Ionicons/css/ionicons.min.css" />
+  <!-- animate.css -->
+  <link rel="stylesheet" href="plugins/animate-css/animate.css" />
+  <!-- Magnify Popup -->
+  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css" />
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="plugins/slick/slick.css" />
 
-	<!-- bootstrap.min css -->
-	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-	<!-- Ionic Icon Css -->
-	<link rel="stylesheet" href="plugins/Ionicons/css/ionicons.min.css">
-	<!-- animate.css -->
-	<link rel="stylesheet" href="plugins/animate-css/animate.css">
-	<!-- Magnify Popup -->
-	<link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
-	<!-- Slick CSS -->
-	<link rel="stylesheet" href="plugins/slick/slick.css">
-
-	<!-- Main Stylesheet -->
-	<link rel="stylesheet" href="css/style.css">
-
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body id="body">
-	<!-- Header Start -->
-	<!-- Header Start -->
-	<header class="navigation">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<nav class="navbar navbar-expand-lg p-0">
-						<a class="navbar-brand" href="index.html">
-							<img src="images/logo.png" alt="Logo">
-						</a>
+  <!-- Header Start -->
+  <!-- Header Start -->
+  <header class="navigation">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg p-0">
+            <a class="navbar-brand" href="index.html">
+              <img src="images/logo.png" alt="Logo" />
+            </a>
 
-						<button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-							data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
-							aria-label="Toggle navigation">
-							<span class="ion-android-menu"></span>
-						</button>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+              data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="ion-android-menu"></span>
+            </button>
 
-						<div class="collapse navbar-collapse ml-auto" id="navbarsExample09">
-							<ul class="navbar-nav ml-auto">
-								<li class="nav-item active">
-									<a class="nav-link" href="index.html">Home</a>
-								</li>
-								<li class="nav-item dropdown @@portfolio">
-									<a class="nav-link dropdown-toggle" href="service.html" id="dropdown03"
-										data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services <span
-											class="ion-ios-arrow-down"></span></a>
-									<ul class="dropdown-menu" aria-labelledby="dropdown03">
-										<li><a class="dropdown-item @@portfolioFilter" href="web-service.html">Web
-												service</a></li>
-										<li><a class="dropdown-item @@portfolioSingle" href="security.html">Security</a>
-										</li>
-										<li><a class="dropdown-item @@portfolioSingle"
-												href="digital-marketing.html">Digital marketing</a></li>
-										<li><a class="dropdown-item @@portfolioSingle" href="power.html">Power</a></li>
-										<li><a class="dropdown-item @@portfolioSingle" href="hardware.html">Hardware</a>
-										</li>
-										<li><a class="dropdown-item @@portfolioSingle" href="software.html">Software</a>
-										</li>
-									</ul>
-								</li>
-								<li class="nav-item @@about"><a class="nav-link" href="about.html">About Us</a></li>
-								<li class="nav-item @@contact"><a class="nav-link" href="contact.html">Contact Us</a>
-								</li>
-							</ul>
-						</div>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header><!-- header close -->
+            <div class="collapse navbar-collapse ml-auto" id="navbarsExample09">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown @@portfolio active">
+                  <a class="nav-link dropdown-toggle" href="service.html" id="dropdown03" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Services <span class="ion-ios-arrow-down"></span></a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                    <li>
+                      <a class="dropdown-item @@portfolioFilter" href="hardware.html">Hardware solutions</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item @@portfolioSingle" href="software.html">Software solutions</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item @@portfolioSingle" href="digital-marketing.html">Digital marketing</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item @@portfolioSingle" href="power.html">Graphics Design</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item @@portfolioSingle" href="web-service.html">Web Services</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item @@portfolioSingle" href="security.html">Security</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item @@about">
+                  <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item @@contact">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item @@contact"><a class="nav-link" href="career.html">Carrer</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header close -->
+  <div style="position:fixed !important; bottom:80px!important; right: 20px;">
+    <a href="https://wa.me/919861393191">
+      <img src="./images/whatsapp.png" alt="" style="width: 50px; height: 50px; z-index:1000;">
+    </a>
+  </div>
 
-	<!-- main page task -->
+  <!-- main page task -->
+  <section class="services">
+    <section class="page-title">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <h1 style="text-align:center;font-family:Switzer-Regular">Hardware solutions</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	<!-- main page task end  -->
+    <section style="padding:50px;">
+      <div style="text-align:justify; display: block;">
+        <div style="display: flex;margin-bottom:50px; ">
+          <div style="display: block; padding:40px; background-color: #d4e1e1; ">
+            <h1 style="font-family:Switzer-Regular; text-shadow: 2px 2px gray;font-weight: 800;">CCTV </h1>
+            <p style="font-family: Switzer-Regular; color: black; font-size: medium;">
+              CCTV(closed-circuit television) cameras are commonly used in business and office settings for security
+              purposes. Footage should capture any suspicious activity, including theft, vandalism, and unauthorized
+              access. It's also important to ensure that the cameras are not capturing any private or confidential
+              information, such as passwords or financial data.
+              CCTV cameras are commonly used in retail settings to deter theft and monitor customer behavior. Footage
+              should capture any suspicious activity, including shoplifting, fraudulent returns, and other forms of
+              retail theft. It's also important to ensure that the cameras are not capturing any personal information,
+              such as credit card numbers or PINs.
+            </p>
+          </div>
+          <img src="images/cctv.jpg" alt="" style="height: auto; width: auto" />
+        </div>
 
-	<!-- footer Start -->
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="footer-manu">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about">About Us</a></li>
-							<li><a href="contact">Contact us</a></li>
-							<li><a href="service.html">Our Services</a></li>
-							<li><a href="blogs">Blog Posts</a></li>
-						</ul>
-					</div>
-					<p class="copyright mb-0">Copyright
-						<script>document.write(new Date().getFullYear())</script> &copy; Designed & Developed by <a
-							href="http://www.themefisher.com">@APM-Pune</a>. All rights reserved.
-					</p>
-				</div>
-			</div>
-		</div>
-	</footer>
 
-	<!--Scroll to top-->
-	<div id="scroll-to-top" class="scroll-to-top">
-		<span class="icon ion-ios-arrow-up"></span>
-	</div>
-	<!-- 
+
+        <div style="text-align:justify; display: block;">
+          <div style="display: flex;margin-bottom:50px; ">
+            <div style="display: block; padding:40px; background-color: #d4e1e1; ">
+              <h1 style="font-family:Switzer-Regular; text-shadow: 2px 2px gray;font-weight: 800;">Desktop </h1>
+              <p style="font-family: Switzer-Regular; color: black; font-size: medium;">
+                Desktop computers are commonly used for productivity tasks such as office work, graphic design, and
+                video editing. Content about desktop productivity can include tutorials on how to use different software
+                tools for productivity tasks, reviews of productivity software, and discussions about how to optimize
+                your desktop for productivity.
+                Desktop computers can experience hardware or software issues that require maintenance or
+                troubleshooting. Content about desktop maintenance and troubleshooting can include guides on how to
+                diagnose and fix common issues, reviews of maintenance software, and discussions about how to maintain a
+                desktop for optimal performance and longevity.
+              </p>
+            </div>
+            <img src="images/desktop.jpg" alt="" style="height: auto; width: auto" />
+          </div>
+        </div>
+
+        <div style="text-align:justify; display: block;">
+          <div style="display: flex;margin-bottom:50px; ">
+            <div style="display: block; padding:40px; background-color: #d4e1e1; ">
+              <h1 style="font-family:Switzer-Regular; text-shadow: 2px 2px gray;font-weight: 800;">Laptop</h1>
+              <p style="font-family: Switzer-Regular; color: black; font-size: medium;">
+                Content about selling a laptop should include the asking price for the laptop. Researching comparable
+                laptops on the market can help to determine a fair price for the laptop. If the laptop is being sold as
+                part of a bundle, such as with a carrying case or extra accessories, that should also be factored into
+                the asking price.
+                One of the most important things to include in content about selling a laptop is the specifications of
+                the laptop. This includes the brand, model, processor type and speed, RAM, storage capacity, screen
+                size, and graphics card. Potential buyers will want to know these details in order to determine if the
+                laptop meets their needs.
+
+
+              </p>
+            </div>
+            <img src="images/laptop.jpg" alt="" style="height: auto; width:auto" />
+          </div>
+
+          <div style="text-align:justify; display: block;">
+            <div style="display: flex;margin-bottom:50px; ">
+              <div style="display: block; padding:40px; background-color: #d4e1e1; ">
+                <h1 style="font-family:Switzer-Regular; text-shadow: 2px 2px gray;font-weight: 800;">Hardware Accesories
+                </h1>
+                <p style="font-family: Switzer-Regular; color: black; font-size: medium;">
+                  CCTV(closed-circuit television) cameras are commonly used in business and office settings for security
+                  purposes. Footage should capture any suspicious activity, including theft, vandalism, and unauthorized
+                  access. It's also important to ensure that the cameras are not capturing any private or confidential
+                  information, such as passwords or financial data.
+                  CCTV cameras are commonly used in retail settings to deter theft and monitor customer behavior.
+                  Footage
+                  should capture any suspicious activity, including shoplifting, fraudulent returns, and other forms of
+                  retail theft. It's also important to ensure that the cameras are not capturing any personal
+                  information,
+                  such as credit card numbers or PINs.
+                </p>
+              </div>
+              <img src="images/computer accsories.jpg" alt="" style="height: auto; width: auto" />
+            </div>
+
+          </div>
+    </section>
+
+
+    <!-- main page task end  -->
+
+    <!-- footer Start -->
+    <footer style="display: flex; background-color: rgb(0, 9, 9); padding: 20px; color: white;">
+      <div class="display:block: text-align:center">
+        <h3 style="text-align: center;">About Us</h3>
+        <p> Vaishnavi Infotech Solutions is a leading provider of software
+          and hardware solutions, web services, power, security, and
+          digital marketing to businesses of all sizes. We are committed
+          to delivering top-notch solutions that help businesses achieve
+          their goals and stay ahead of the competition.</p>
+
+      </div>
+
+      <div class="display:block: text-align:center">
+        <h3 style="text-align: center;">About Us</h3>
+        <p> Vaishnavi Infotech Solutions is a leading provider of software
+          and hardware solutions, web services, power, security, and
+          digital marketing to businesses of all sizes. We are committed
+          to delivering top-notch solutions that help businesses achieve
+          their goals and stay ahead of the competition.</p>
+
+      </div>
+      <div class="display:block: text-align:center">
+        <h3 style="text-align:center;">About Us</h3>
+        <p> Vaishnavi Infotech Solutions is a leading provider of software
+          and hardware solutions, web services, power, security, and
+          digital marketing to businesses of all sizes. We are committed
+          to delivering top-notch solutions that help businesses achieve
+          their goals and stay ahead of the competition.</p>
+
+      </div>
+
+
+
+    </footer>
+
+
+    <!--Scroll to top-->
+    <div id="scroll-to-top" class="scroll-to-top">
+      <span class="icon ion-ios-arrow-up"></span>
+    </div>
+    <!-- 
     Essential Scripts
     =====================================-->
 
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/shuffle/shuffle.min.js"></script>
+    <script src="plugins/SyoTimer/jquery.syotimer.min.js"></script>
+    <!-- Google Map -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+    <script src="plugins/google-map/map.js"></script>
 
-	<!-- Main jQuery -->
-	<script src="plugins/jquery/jquery.min.js"></script>
-	<!-- Bootstrap 3.1 -->
-	<script src="plugins/bootstrap/bootstrap.min.js"></script>
-	<!-- slick Carousel -->
-	<script src="plugins/slick/slick.min.js"></script>
-	<script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
-	<!-- filter -->
-	<script src="plugins/shuffle/shuffle.min.js"></script>
-	<script src="plugins/SyoTimer/jquery.syotimer.min.js"></script>
-	<!-- Google Map -->
-	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
-	<script src="plugins/google-map/map.js"></script>
-
-	<script src="js/script.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
