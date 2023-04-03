@@ -5,6 +5,7 @@ body {
   line-height: 1.65;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
+  width: full;
 }
 
 h1,
@@ -65,6 +66,84 @@ a:hover {
   text-decoration: none;
   outline: 0;
   color: #655e7a;
+}
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+    margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-column:last-child {
+  margin-right: 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #f44336;
+}
+
+.vertical-tabs {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vertical-tabs li {
+  margin-bottom: 10px;
+}
+
+.vertical-tabs li a {
+  display: block;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.vertical-tabs li a:hover {
+  background-color: #f44336;
+}
+
+.get-in-touch p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  
+  .footer-column {
+    flex: 0 0 100%;
+    margin-right: 0;
+  }
 }
 
 blockquote {
@@ -914,7 +993,7 @@ ul.dropdown-menu li {
   }
 }
 .slider {
-  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmT26l8HHLRRd4duMrN7r8e6JMRUfGHIV0-Q&usqp=CAU")
+  background: url("../images/background.index.jpg")
     no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -1024,29 +1103,18 @@ ul.dropdown-menu li {
 }
 
 .service {
-  background-color:#021214;
+  background-color:black;
   text-align: center;
   color: #f2f2f7;
-  padding: 50px 0;
-}
-.service .service-item {
-  padding-bottom: 10px;
-}
-.service .service-item i {
-  font-size: 60px;
-  color: #f5f5f9;
-}
-.service .service-item h4 {
-  padding-top: 15px;
-  margin: 0;
-  font-weight: 500;
-}
-.service .service-item p {
-  padding-top: 10px;
-  margin: 0;
+  padding: 40px 0 40px;
 }
 
+
+
+
+
 .custom {
+  background-color:black;
   color: #0b0b0b;
   padding-top: 0px;
   font-size: 40px;
@@ -2890,14 +2958,13 @@ ul.dropdown-menu li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 20px 0;
 }
 
 .card {
   width: 300px;
   height: 450px;
   margin: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 100px  black;
   border-radius: 10px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
@@ -2917,6 +2984,7 @@ ul.dropdown-menu li {
 
 .card p {
   margin: 20px;
+  text-align: justify;
 }
 
 .card:hover {
