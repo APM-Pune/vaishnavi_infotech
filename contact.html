@@ -33,10 +33,81 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  <style>
+
+h1 {
+	text-align: center;
+}
+
+form {
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type=text], input[type=email], textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+@media screen and (max-width: 600px) {
+	form {
+		margin-top: 10px;
+	}
+}
+.whatsapp {
+    position: fixed;
+    bottom: 18px;
+    right: 10px;
+    animation: whatsapp-bounce 1s infinite alternate;
+    z-index: 1000;
+  }
+  @keyframes whatsapp-bounce {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+    to {
+      transform: translate3d(10px, 10px, 10px);
+    }
+  }
+</style>
 
 </head>
 
 <body id="body">
+
+  <div class="whatsapp">
+    <a href="https://wa.me/918885937030" target="_blank">
+      <img
+        width="50px"
+        height="50px"
+        style="border-radius: 50%"
+        src="./images/whatsapp.png"
+        alt="WhatsApp"
+      />
+    </a>
+  </div>
   <!-- Header Start -->
   <!-- Header Start -->
   <header class="navigation">
@@ -73,7 +144,7 @@
                 </li>
                 <li class="nav-item @@about"><a class="nav-link" href="about.html">About Us</a></li>
                 <li class="nav-item @@contact active"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                <li class="nav-item @@contact"><a class="nav-link" href="career.html">Carrer</a></li>
+                <li class="nav-item @@contact"><a class="nav-link" href="career.html">Careers</a></li>
               </ul>
             </div>
           </nav>
@@ -81,11 +152,8 @@
       </div>
     </div>
   </header>
-  <div style="position:fixed !important; bottom:80px!important; right: 20px;">
-    <a href="https://wa.me/919861393191">
-      <img src="./images/whatsapp.png" alt="" style="width: 50px; height: 50px; z-index:1000;">
-    </a>
-  </div>
+
+ 
 
 
   <section class="page-title bg-2">
@@ -94,7 +162,6 @@
         <div class="col-md-12">
           <div class="block">
             <h1>Drop Us A Note</h1>
-            <p>Vaishnavi Infotech is a leading provider of software and hardware solutions, Web & Application Solutions, Security solutions, Graphic designing and digital marketing to businesses of all sizes. We are committed to deliver top notch solutions that help businesses achieve their goals and stay ahead of the competition.</p>
           </div>
         </div>
       </div>
@@ -104,154 +171,83 @@
 
 
 
-  <div style="text-align:justify; display: block;padding-left:10%; padding-right: 10%; margin-top: 20px;">
-    <div style="display: flex;margin-bottom:50px; ">
-      <div style="display: block; padding:40px; background-color: #d4e1e1; ">
-        <h1 style="font-family:Switzer-Regular; text-shadow: 2px 2px gray;font-weight: 800;">DIRECTOR'S PROFILE </h1>
-        <br>
-        <p style="font-family: Switzer-Regular; color: black; font-size: medium;">
-          A seasoned professional with over 17 years of experience and expertise in handling technically rich products
-          in field of Welding, Cutting, Automation, Robotics with world’s top brands like Amada, Fronius, Ito Group. A
-          top Leader, Mentor, Influencer & Technology enthusiast who believes in working as a technology partner with
-          customers at grass root level. His approach is to provide the right solutions to the customers at right price
-          and right time.
-        </p>
-        <br>
-        <h3>Himanshu Panda</h3>
-        <h6>BE Industrial Engineering, MBA-Marketing & Operations</h6>
-      </div>
-      <img src="images/avater.jpg" alt="img1" style="height: auto; width: 400px;" />
-    </div>
+  <div class="container">
+		<h1>Contact Us</h1>
+		<form action="#" method="post">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Your name..">
 
-    <div style="text-align:justify; display: block;margin-top: 20px;">
-      <div style="display: flex;margin-bottom:50px; ">
-        <div style="display: block; padding:40px; background-color: #d4e1e1; ">
-          <h1 style="font-family:Switzer-Regular; text-shadow: 2px 2px gray;font-weight: 800;">DIRECTOR'S PROFILE </h1>
-          <br>
-          <p style="font-family: Switzer-Regular; color: black; font-size: medium;">
-            A seasoned professional with over 17 years of experience and expertise in handling technically rich products
-            in field of Welding, Cutting, Automation, Robotics with world’s top brands like Amada, Fronius, Ito Group. A
-            top Leader, Mentor, Influencer & Technology enthusiast who believes in working as a technology partner with
-            customers at grass root level. His approach is to provide the right solutions to the customers at right price
-            and right time.
-          </p>
-          <br>
-          <h3>Himanshu Panda</h3>
-          <h6>BE Industrial Engineering, MBA-Marketing & Operations</h6>
-        </div>
-        <img src="images/avater.jpg" alt="img1" style="height: auto; width: 400px;" />
-      </div>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="Your email..">
 
-      <div style="text-align:justify; display: block;  margin-top: 20px;">
-        <div style="display: flex;margin-bottom:50px; ">
-          <div style="display: block; padding:40px; background-color: #d4e1e1; ">
-            <h1 style="font-family:Switzer-Regular; text-shadow: 2px 2px gray;font-weight: 800;">DIRECTOR'S PROFILE </h1>
-            <br>
-            <p style="font-family: Switzer-Regular; color: black; font-size: medium;">
-              A seasoned professional with over 17 years of experience and expertise in handling technically rich products
-              in field of Welding, Cutting, Automation, Robotics with world’s top brands like Amada, Fronius, Ito Group. A
-              top Leader, Mentor, Influencer & Technology enthusiast who believes in working as a technology partner with
-              customers at grass root level. His approach is to provide the right solutions to the customers at right price
-              and right time.
-            </p>
-            <br>
-            <h3>Himanshu Panda</h3>
-            <h6>BE Industrial Engineering, MBA-Marketing & Operations</h6>
-          </div>
-          <img src="images/avater.jpg" alt="img1" style="height: auto; width: 400px;" />
-        </div>
-    
-  <!-- contact form start -->
-  <section class="contact-form">
-    <div class="container">
-      <form class="row" id="contact-form">
-        <div class="col-md-6 col-sm-12">
-          <div class="block">
-            <div class="form-group">
-              <input name="user_name" type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <input name="user_email" type="text" class="form-control" placeholder="Email Address">
-            </div>
-            <div class="form-group">
-              <input name="user_subject" type="text" class="form-control" placeholder="Subject">
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="block">
-            <div class="form-group-2">
-              <textarea name="user_message" class="form-control" rows="4" placeholder="Your Message"></textarea>
-            </div>
-            <button class="btn btn-default" type="submit">Send Message</button>
-          </div>
-        </div>
-        <div class="error" id="error">Sorry Msg dose not sent</div>
-        <div class="success" id="success">Message Sent</div>
-      </form>
-      <div class="contact-box row">
-        <div class="col-md-6 col-sm-12">
-          <div class="block">
-            <h2>Stop By For A visit</h2>
-            <ul class="address-block">
-              <li>
-                <i class="ion-ios-location-outline"></i>North Main Street,Brooklyn Australia
-              </li>
-              <li>
-                <i class="ion-ios-email-outline"></i>Email: contact@mail.com
-              </li>
-              <li>
-                <i class="ion-ios-telephone-outline"></i>Phone:+88 01672 506 744
-              </li>
-            </ul>
-            <ul class="social-icons">
-              <li>
-                <a href="http://www.themefisher.com"><i class="ion-social-googleplus-outline"></i></a>
-              </li>
-              <li>
-                <a href="http://www.themefisher.com"><i class="ion-social-linkedin-outline"></i></a>
-              </li>
-              <li>
-                <a href="http://www.themefisher.com"><i class="ion-social-pinterest-outline"></i></a>
-              </li>
-              <li>
-                <a href="http://www.themefisher.com"><i class="ion-social-dribbble-outline"></i></a>
-              </li>
-              <li>
-                <a href="http://www.themefisher.com"><i class="ion-social-twitter-outline"></i></a>
-              </li>
-              <li>
-                <a href="http://www.themefisher.com"><i class="ion-social-facebook-outline"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
+			<label for="message">Message</label>
+			<textarea id="message" name="message" placeholder="Write something.."></textarea>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+      <h3 class="footer-h3">Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://wa.me/919861393191">
+        <img
+          src="./images/whatsapp.png"
+          alt=""
+          style="
+          width: 50px;
+          height: 50px;
+          z-index: 1000;
+          border-radius: 50%;
+          "
+        /> </a>
+        <a href="https://wa.me/919861393191">
+          <img
+          src="./images/linked  in.png"
+          alt=""
+          style="
+            width: 55px;
+            height: 55px;
+            z-index: 1000;
+            border-radius: 50%;
+          "
+          /> </a>
+          <a href="https://wa.me/919861393191">
+          <img
+            src="./images/instagram.jpg"
+            alt=""
+            style="
+            width: 60px;
+            height: 60px;
+            z-index: 1000;
+            border-radius: 50%;
+            "
+          /> </a>
+      </div>
+      </div>
+      <div class="footer-column">
+      <h3 class="footer-h3">Explore</h3>
+      <ul class="vertical-tabs">
+        <li><a href="./about.html">About Us</a></li>
+        <li><a href="./index.html">Our Services</a></li>
+        <li><a href="./career.html">Careers</a></li>
+        <li><a href="./contact.html">Contact Us</a></li>
+      </ul>
+      </div>
+      <div class="footer-column">
+      <h3 class="footer-h3">Get in Touch</h3>
+      <div class="get-in-touch">
+        <p style="color: black !important;">Aarambh, Moshi-Alandi Road, Pune<p>
+        <p style="color: black !important;">Pune , Maharastra </p>
+        <p style="color: black !important;">Phone: 8885937030 , 9136002477</p>
+        <p style="color: black !important;">Email: support@vaishnaviinfotech.in</p>
+      </div>
       </div>
     </div>
-  </section>
-  <!-- footer Start -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="footer-manu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about">About Us</a></li>
-              <li><a href="contact">Contact us</a></li>
-              <li><a href="service.html">Our Services</a></li>
-              <li><a href="blogs">Blog Posts</a></li>
-            </ul>
-          </div>
-          <p class="copyright mb-0">Copyright
-            <script>document.write(new Date().getFullYear())</script> &copy; Designed & Developed by <a
-              href="http://www.themefisher.com">@APM-Pune</a>. All rights reserved.
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+    </footer>
   <!--Scroll to top-->
   <div id="scroll-to-top" class="scroll-to-top">
     <span class="icon ion-ios-arrow-up"></span>
@@ -279,5 +275,4 @@
   <script src="js/script.js"></script>
 
 </body>
-
 </html>

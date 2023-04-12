@@ -34,10 +34,41 @@
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="css/style.css">
+  <style>
+    .whatsapp {
+      position: fixed;
+      bottom: 18px;
+      right: 10px;
+      animation: whatsapp-bounce 1s infinite alternate;
+      z-index: 1000;
+    }
+    @keyframes whatsapp-bounce {
+      from {
+        transform: translate3d(0, 0, 0);
+      }
+      to {
+        transform: translate3d(10px, 10px, 10px);
+      }
+    }
+  </style>
 
 </head>
 
 <body id="body">
+
+  
+  <!--Whatsapp Button Integration-->
+  <div class="whatsapp">
+    <a href="https://wa.me/918885937030" target="_blank">
+      <img
+        width="50px"
+        height="50px"
+        style="border-radius: 50%"
+        src="./images/whatsapp.png"
+        alt="WhatsApp"
+      />
+    </a>
+  </div>
   <!-- Header Start -->
   <!-- Header Start -->
   <header class="navigation">
@@ -74,7 +105,7 @@
                 </li>
                 <li class="nav-item @@about"><a class="nav-link" href="about.html">About Us</a></li>
                 <li class="nav-item @@contact"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                <li class="nav-item @@contact"><a class="nav-link" href="career.html">Carrer</a></li>
+                <li class="nav-item @@contact"><a class="nav-link" href="career.html">Careers</a></li>
               </ul>
             </div>
           </nav>
@@ -83,13 +114,6 @@
     </div>
   </header>
 
-
-  <!--Whatsapp Button Integration-->
-  <div style="position:fixed !important; bottom: 80px!important; right: 20px;">
-    <a href="https://wa.me/919861393191">
-      <img src="./images/whatsapp.png" alt="" style="width: 50px; height: 50px; z-index:1000;">
-    </a>
-  </div>
 
 
   <!-- Slider Start -->
@@ -146,14 +170,14 @@
   <!-- Service Start -->
   <!-- Service Start -->
   <section style="background-color:black; text-align: center;color: #f2f2f7; padding: 40px 0 40px;">
-
+   <div style="height: 170px;">
     <h1>Our Services</h1>
     <p style="font-family: cursive; color: white; font-size: large; padding-left: 20%; padding-right: 20%;">we provide a
       wide range of services to help
       businesses succeed in the digital age. We specialize in
       hardware, software, power, security, and digital marketing, delivering customized solutions to meet your
       unique needs.</p>
-
+    </div>
   
 
 
@@ -162,7 +186,7 @@
 
     <a href="hardware.html">
       <div class="card">
-        <img src="./images/hardware.jpg" alt="Image 1" style="width:auto; height: 180px;">
+        <img src="./images/hardware solutins.jpg" alt="Image 1" style="width:auto; height: 180px;">
         <h2 style="text-align: center;font-weight: 600;color: brown;">Hardware solution</h2>
         <p class="custom1"> We provide high-quality hardware solutions for businesses Whether you need desktops,
           laptops, servers, or networking equipment provide support and maintenance to ensure that your hardware is
@@ -205,9 +229,7 @@
       <div class="card">
         <img src="./images/graphicsdesign.jpg" alt="Image 4" style="width:auto; height: 180px;">
         <h2 style="text-align: center;font-weight: 600;color: brown;">Graphic Designing</h2>
-        <p class="custom1">With the increasing threat of cyber attacks and data breaches, security services are
-          becoming more important than ever. You could offer a range of security services, including vulnerability
-          scanning, malware detection, and penetration testing.</p>
+        <p class="custom1">Graphic design is an art where our professionals communicate messages through visual contents, by applying visual hierarchy and page layout techniques. Our professionals are capable of designing of posters, infographics, book covers,logos, business cards, signs, website layouts.</p>
 
       </div>
     </a>
@@ -311,104 +333,62 @@
 
 
       <!-- footer Start -->
-      <footer class="bg-light">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
-              <h4 class="text-uppercase mb-4">About Us</h4>
-              <p class="text-muted">
-                We are a creative agency specializing in web design, branding, and
-                digital marketing. Our goal is to help businesses succeed online
-                by creating innovative solutions that drive results.
-              </p>
-            </div>
-            <div class="col-md-3">
-              <h4 class="text-uppercase mb-4">Our Services</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-muted">Web Design</a></li>
-                <li><a href="#" class="text-muted">Branding</a></li>
-                <li><a href="#" class="text-muted">Digital Marketing</a></li>
-                <li><a href="#" class="text-muted">SEO</a></li>
-                <li><a href="#" class="text-muted">Social Media</a></li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h4 class="text-uppercase mb-4">Contact Us</h4>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="text-muted"
-                    ><i class="fas fa-map-marker-alt"></i> 123 Main St, Anytown
-                    USA</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-muted"
-                    ><i class="fas fa-phone"></i> 555-123-4567</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-muted"
-                    ><i class="fas fa-envelope"></i> info@companyname.com</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3">
-              <h4>Connect with us</h4>
-              <ul class="list-inline social-media-icons">
-                <li class="list-inline-item">
-                  <a href="#"
-                    ><a href="https://wa.me/919861393191">
-                      <img
-                        src="./images/whatsapp.png"
-                        alt=""
-                        style="
-                          width: 50px;
-                          height: 50px;
-                          z-index: 1000;
-                          border-radius: 50%;
-                        "
-                      /> </a
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"
-                    ><a href="https://wa.me/919861393191">
-                      <img
-                        src="./images/whatsapp.png"
-                        alt=""
-                        style="
-                          width: 50px;
-                          height: 50px;
-                          z-index: 1000;
-                          border-radius: 50%;
-                        "
-                      /> </a
-                  ></a>
-                </li>
-                <li class="list-inline-item">
-                  <a href="#"
-                    ><a href="https://wa.me/919861393191">
-                      <img
-                        src="./images/whatsapp.png"
-                        alt=""
-                        style="
-                          width: 50px;
-                          height: 50px;
-                          z-index: 1000;
-                          border-radius: 50%;
-                        "
-                      /> </a
-                  ></a>
-                </li>
-              </ul>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3 class="footer-h3">Follow Us</h3>
+            <div class="social-icons">
+              <a href="https://wa.me/919861393191">
+                <img
+                  src="./images/whatsapp.png"
+                  alt=""
+                  style="
+                    width: 50px;
+                    height: 50px;
+                    z-index: 1000;
+                    border-radius: 50%;
+                  "
+                /> </a>
+                <a href="https://wa.me/919861393191">
+                  <img
+                    src="./images/linked  in.png"
+                    alt=""
+                    style="
+                      width: 55px;
+                      height: 55px;
+                      z-index: 1000;
+                      border-radius: 50%;
+                    "
+                  /> </a>
+                  <a href="https://wa.me/919861393191">
+                    <img
+                      src="./images/instagram.jpg"
+                      alt=""
+                      style="
+                        width: 60px;
+                        height: 60px;
+                        z-index: 1000;
+                        border-radius: 50%;
+                      "
+                    /> </a>
             </div>
           </div>
-          <div class="row mt-4">
-            <div class="col-md-12 text-center">
-              <p class="text-muted">
-                &copy; 2023 Company Name. All rights reserved.
-              </p>
+          <div class="footer-column">
+            <h3 class="footer-h3">Explore</h3>
+            <ul class="vertical-tabs">
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./index.html">Our Services</a></li>
+              <li><a href="./career.html">Careers</a></li>
+              <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3 class="footer-h3">Get in Touch</h3>
+            <div class="get-in-touch">
+              <p style="color: black !important;">Aarambh, Moshi-Alandi Road, Pune<p>
+              <p style="color: black !important;">Pune , Maharastra </p>
+              <p style="color: black !important;">Phone: 8885937030 , 9136002477</p>
+              <p style="color: black !important;">Email: support@vaishnaviinfotech.in</p>
             </div>
           </div>
         </div>

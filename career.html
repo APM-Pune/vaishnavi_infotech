@@ -1,214 +1,426 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
-
-  <!-- Basic Page Needs
+  <head>
+    <!-- Basic Page Needs
   ================================================== -->
-  <meta charset="utf-8">
-  <title>Vaishnavi Infotech | contact</title>
+    <meta charset="utf-8" />
+    <title>Vaishnavi Infotech | contact</title>
 
-  <!-- Mobile Specific Metas
+    <!-- Mobile Specific Metas
   ================================================== -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Creative Agency Bootstrap Template">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Themefisher">
-  <meta name="generator" content="Themefisher Airspace Template v1.0">
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Creative Agency Bootstrap Template" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+    <meta name="author" content="Themefisher" />
+    <meta name="generator" content="Themefisher Airspace Template v1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
 
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css" />
+    <!-- Ionic Icon Css -->
+    <link rel="stylesheet" href="plugins/Ionicons/css/ionicons.min.css" />
+    <!-- animate.css -->
+    <link rel="stylesheet" href="plugins/animate-css/animate.css" />
+    <!-- Magnify Popup -->
+    <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css" />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="plugins/slick/slick.css" />
 
-  <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- Ionic Icon Css -->
-  <link rel="stylesheet" href="plugins/Ionicons/css/ionicons.min.css">
-  <!-- animate.css -->
-  <link rel="stylesheet" href="plugins/animate-css/animate.css">
-  <!-- Magnify Popup -->
-  <link rel="stylesheet" href="plugins/magnific-popup/magnific-popup.css">
-  <!-- Slick CSS -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
 
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+    <style>
+      main {
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 20px;
+      }
 
-  <style>
-    footer {
-  background-color: #f2f2f2;
-  padding: 20px;
-}
+      .careers {
+        background-color: #f4f4f4;
+        text-align: center;
+        padding: 40px;
+        margin-bottom: 20px;
+      }
 
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
+      .careers h2 {
+        margin-top: 0;
+      }
 
-.footer-column {
-    margin-right: 20px;
-  margin-bottom: 20px;
-}
+      .careers p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
 
-.footer-column:last-child {
-  margin-right: 0;
-}
+      .btn {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 18px;
+        transition: background-color 0.3s ease-in-out;
+      }
 
-.social-icons a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-  line-height: 40px;
-  margin-right: 10px;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
-}
+      .btn:hover {
+        background-color: #666;
+      }
 
-.social-icons a:hover {
-  background-color: #f44336;
-}
+      .openings h2 {
+        margin-top: 0;
+      }
 
-.vertical-tabs {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+      .job-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
 
-.vertical-tabs li {
-  margin-bottom: 10px;
-}
+      .job-list li {
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding: 20px;
+      }
 
-.vertical-tabs li a {
-  display: block;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
+      .job-list li h3 {
+        margin-top: 0;
+      }
 
-.vertical-tabs li a:hover {
-  background-color: #f44336;
-}
+      .job-list li p {
+        margin: 10px 0;
+      }
 
-.get-in-touch p {
-  margin: 0;
-  margin-bottom: 10px;
-}
+      .job-list li a {
+        background-color: #333;
+        color: #fff;
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+      }
 
-@media screen and (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-  }
-  
-  .footer-column {
-    flex: 0 0 100%;
-    margin-right: 0;
-  }
-}
+      .job-list li a:hover {
+        background-color: #666;
+      }
 
-  </style>
+      .whatsapp {
+        position: fixed;
+        bottom: 18px;
+        right: 10px;
+        animation: whatsapp-bounce 1s infinite alternate;
+        z-index: 1000;
+      }
+      @keyframes whatsapp-bounce {
+        from {
+          transform: translate3d(0, 0, 0);
+        }
+        to {
+          transform: translate3d(10px, 10px, 10px);
+        }
+      }
+    </style>
+  </head>
 
-</head>
+  <body id="body">
+    <div class="whatsapp">
+      <a href="https://wa.me/918885937030" target="_blank">
+        <img
+          width="50px"
+          height="50px"
+          style="border-radius: 50%"
+          src="./images/whatsapp.png"
+          alt="WhatsApp"
+        />
+      </a>
+    </div>
+    <!-- Header Start -->
+    <!-- Header Start -->
+    <header class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg p-0">
+              <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo" />
+              </a>
+              <button
+                class="navbar-toggler collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarsExample09"
+                aria-controls="navbarsExample09"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="ion-android-menu"></span>
+              </button>
 
-<body id="body">
-  <!-- Header Start -->
-  <!-- Header Start -->
-  <header class="navigation">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <nav class="navbar navbar-expand-lg p-0">
-            <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
-              data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="ion-android-menu"></span>
-            </button>
+              <div
+                class="collapse navbar-collapse ml-auto"
+                id="navbarsExample09"
+              >
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown @@portfolio">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="service.html"
+                      id="dropdown03"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Services <span class="ion-ios-arrow-down"></span
+                    ></a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                      <li>
+                        <a
+                          class="dropdown-item @@portfolioFilter"
+                          href="hardware.html"
+                          >Hardware solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item @@portfolioSingle"
+                          href="software.html"
+                          >Software solutions</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item @@portfolioSingle"
+                          href="digital-marketing.html"
+                          >Digital marketing</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item @@portfolioSingle"
+                          href="power.html"
+                          >Graphics Design</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item @@portfolioSingle"
+                          href="web-service.html"
+                          >Web Services</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item @@portfolioSingle"
+                          href="security.html"
+                          >Security</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item @@about">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item @@contact">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item @@contact active">
+                    <a class="nav-link" href="career.html">Careers</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
 
-            <div class="collapse navbar-collapse ml-auto" id="navbarsExample09">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+    <section class="back1">
+      <div class="block">
+        <h1
+          style="
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+            padding-top: 70px;
+          "
+        >
+          Careers
+        </h1>
+      </div>
+    </section>
+
+    <div class="flex" style="margin-bottom: 50px;">
+		
+      <div
+       style="
+       margin-top: 59px;
+       margin-left: 20px;
+       margin-right: 20px;
+       display: flex;
+       "
+     >
+       <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+       <div class="md:flex">
+         <div class="md:w-1/3">
+         <img
+           src="./images/carrers.jpg"
+           alt="Placeholder Image"
+           class="h-auto w-full object-cover"
+           style="max-height: 400px; width: -webkit-fill-available"
+         />
+         </div>
+         <div class="p-4 md:w-2/3">
+         <p style="font-family: Arial, sans-serif; font-size: 18px; font-weight: 500; line-height: 1.6em; color: #333;">
+           
+ Vaishnavi Infotech is a leading provider of software and hardware solutions, Web & Application Solutions, Security solutions, Graphic designing and digital marketing to businesses of all sizes. We are committed to deliver top notch solutions that help businesses achieve their goals and stay ahead of the competition.
+           </p>
+           <main>
+            <section class="careers">
+              <h2>Join Our Team</h2>
+              <p>Are you looking for an exciting career opportunity in the service industry? Join our team at Service Company and work with a team of passionate and dedicated professionals. We offer competitive salaries, benefits, and opportunities for growth.</p>
+              <a href="#openings" class="btn">View Current Openings</a>
+            </section>
+            
+            <section class="openings" id="openings">
+              <h2>Current Openings</h2>
+              <ul class="job-list">
+                <li>
+                  <h3>Job Title</h3>
+                  <p>Job Description</p>
+                  <a href="#">Apply Now</a>
                 </li>
-                <li class="nav-item dropdown @@portfolio">
-                  <a class="nav-link dropdown-toggle" href="service.html" id="dropdown03" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">Services <span class="ion-ios-arrow-down"></span></a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                    <li><a class="dropdown-item @@portfolioFilter" href="hardware.html">Hardware solutions</a></li>
-                    <li><a class="dropdown-item @@portfolioSingle" href="software.html">Software solutions</a></li>
-                    <li><a class="dropdown-item @@portfolioSingle" href="digital-marketing.html">Digital marketing</a>
-                    </li>
-                    <li><a class="dropdown-item @@portfolioSingle" href="power.html">Graphics Design</a></li>
-                    <li><a class="dropdown-item @@portfolioSingle" href="web-service.html">Web Services</a></li>
-                    <li><a class="dropdown-item @@portfolioSingle" href="security.html">Security</a></li>
-                  </ul>
+                <li>
+                  <h3>Job Title</h3>
+                  <p>Job Description</p>
+                  <a href="#">Apply Now</a>
                 </li>
-                <li class="nav-item @@about"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item @@contact"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item @@contact active"><a class="nav-link" href="career.html">Carrer</a></li>
+                <li>
+                  <h3>Job Title</h3>
+                  <p>Job Description</p>
+                  <a href="#">Apply Now</a>
+                </li>
               </ul>
-            </div>
-          </nav>
+            </section>
+          </main>
+          
+         <a
+           href="#"
+           class="text-white bg-blue-500 hover:bg-blue-600 py-2 px-4 rounded"
+           >Learn More</a
+         >
+         </div>
+       </div>
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+   
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3 class="footer-h3">Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://wa.me/919861393191">
+              <img
+                src="./images/whatsapp.png"
+                alt=""
+                style="
+                  width: 50px;
+                  height: 50px;
+                  z-index: 1000;
+                  border-radius: 50%;
+                "
+              />
+            </a>
+            <a href="https://wa.me/919861393191">
+              <img
+                src="./images/linked  in.png"
+                alt=""
+                style="
+                  width: 55px;
+                  height: 55px;
+                  z-index: 1000;
+                  border-radius: 50%;
+                "
+              />
+            </a>
+            <a href="https://wa.me/919861393191">
+              <img
+                src="./images/instagram.jpg"
+                alt=""
+                style="
+                  width: 60px;
+                  height: 60px;
+                  z-index: 1000;
+                  border-radius: 50%;
+                "
+              />
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-h3">Explore</h3>
+          <ul class="vertical-tabs">
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./index.html">Our Services</a></li>
+            <li><a href="./career.html">Careers</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-h3">Get in Touch</h3>
+          <div class="get-in-touch">
+            <p style="color: black !important">
+              Aarambh, Moshi-Alandi Road, Pune
+            </p>
+            <p></p>
+            <p style="color: black !important">Pune , Maharastra</p>
+            <p style="color: black !important">
+              Phone: 8885937030 , 9136002477
+            </p>
+            <p style="color: black !important">
+              Email: support@vaishnaviinfotech.in
+            </p>
+          </div>
         </div>
       </div>
+    </footer>
+
+    <!--Scroll to top-->
+    <div id="scroll-to-top" class="scroll-to-top">
+      <span class="icon ion-ios-arrow-up"></span>
     </div>
-  </header>
 
+    <!-- 
+    Essential Scripts
+    =====================================-->
 
-  <section class="back1">
-    <div class="block">
-      <h1 style="color: white; text-align: center; font-family: sans-serif; padding-top:70px;">Carrers</h1>
-    </div>
-  </section>
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 3.1 -->
+    <script src="plugins/bootstrap/bootstrap.min.js"></script>
+    <!-- slick Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/shuffle/shuffle.min.js"></script>
+    <script src="plugins/SyoTimer/jquery.syotimer.min.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+    <script src="plugins/google-map/map.js"></script>
 
-
-  <!-- <section>
-    <div style="background-color:gray; display: flex ; justify-content: space-around; flex-wrap: wrap;">
-    <div>fuck1</div>
-    <div>fuck2</div>
-    <div>fuck1</div>
-      
-    </div>
-  </section> -->
-
-  <footer>
-    <div class="footer-container">
-      <div class="footer-column">
-        <h3>Follow Us</h3>
-        <div class="social-icons">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-        </div>
-      </div>
-      <div class="footer-column">
-        <h3>Explore</h3>
-        <ul class="vertical-tabs">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Our Services</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-column">
-        <h3>Get in Touch</h3>
-        <div class="get-in-touch">
-          <p>123 Main St.</p>
-          <p>New York, NY 10001</p>
-          <p>Phone: (123) 456-7890</p>
-          <p>Email: info@example.com</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-    
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -33,10 +33,41 @@
 
 	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="css/style.css">
-
-</head>
-
-<body id="body">
+	<style>
+		.whatsapp {
+		  position: fixed;
+		  bottom: 18px;
+		  right: 10px;
+		  animation: whatsapp-bounce 1s infinite alternate;
+		  z-index: 1000;
+		}
+		@keyframes whatsapp-bounce {
+		  from {
+			transform: translate3d(0, 0, 0);
+		  }
+		  to {
+			transform: translate3d(10px, 10px, 10px);
+		  }
+		}
+	  </style>
+	
+	</head>
+	
+	<body id="body">
+	
+	  
+	  <!--Whatsapp Button Integration-->
+	  <div class="whatsapp">
+		<a href="https://wa.me/918885937030" target="_blank">
+		  <img
+			width="50px"
+			height="50px"
+			style="border-radius: 50%"
+			src="./images/whatsapp.png"
+			alt="WhatsApp"
+		  />
+		</a>
+	  </div>
 	<!-- Header Start -->
 	<!-- Header Start -->
 	<header class="navigation">
@@ -89,7 +120,7 @@
 				  <li class="nav-item @@contact">
 					<a class="nav-link" href="contact.html">Contact Us</a>
 				  </li>
-				  <li class="nav-item @@contact"><a class="nav-link" href="career.html">Carrer</a></li>
+				  <li class="nav-item @@contact"><a class="nav-link" href="career.html">Careers</a></li>
 				</ul>
 			  </div>
 			</nav>
@@ -98,117 +129,126 @@
 	  </div>
 	</header>
 	<!-- header close -->
-	<div style="position:fixed !important; bottom:80px!important; right: 20px;">
-	  <a href="https://wa.me/919861393191">
-		<img src="./images/whatsapp.png" alt="" style="width: 50px; height: 50px; z-index:1000;">
-	  </a>
-	</div>
 
 
 	<!-- main page task -->
-	<section class="page-title">
-		<div class="container">
+	<div class="flex" style="margin-bottom: 50px;">
+		<section class="page-title">
+		  <div class="container">
 			<div class="row">
-				<div class="col-md-12">
-					<div class="block">
-						<h1 style="text-align: center;">Software Solution</h1>
-					</div>
+			  <div class="col-md-12">
+				<div class="block">
+				  <h1 style="text-align: center">Software Solution</h1>
 				</div>
+			  </div>
 			</div>
-		</div>
-	</section>
-
-	<!-- <section style="padding:50px;">
-		<div style="text-align:justify; display: block;">
-			<div style="display:flex; margin-bottom:50px; padding: 20px;">
-				<img src="https://www.cssinfotech.in/assets/img/1566550914476.jpg" alt=""
-					style="height:full; width: 50%; margin-right: 20px;" />
-				<div style="display: block; padding:40px; background-color: #d4e1e1; ">
-
-					<p style="font-family: Switzer-Regular; color: black; font-size:larger; font-weight: 800;">
-						There are several software solutions available  that can help
-						streamline processes, improve customer experience, and boost business efficiency. Here are some
-						popular options:
-					<ul style="list-style-type:disc">
-						<li>Customer Relationship Management (CRM) Software: A CRM software helps businesses manage
-							their interactions with customers, clients, and prospects. It can provide a comprehensive
-							view of all customer interactions, from initial contact to post-sales support, enabling
-							businesses to provide personalized service and build long-term relationships.</li>
-						<li>Content Management System (CMS) Software: A CMS software allows businesses to create,
-							manage, and publish digital content on their websites. It provides a user-friendly interface
-							for non-technical users to manage website content and can support multiple contributors.
-						</li>
-						<li>Project Management Software: A project management software can help service-based businesses
-							manage their projects, from planning to execution and delivery. It can provide tools for
-							task management, team collaboration, time tracking, and resource allocation.</li>
-						<li>Online Booking and Scheduling Software: An online booking and scheduling software can allow
-							businesses to automate their appointment scheduling and booking processes. It can enable
-							customers to book appointments online, receive automated confirmations and reminders, and
-							manage their bookings.</li>
-						<li>Payment Gateway Software: A payment gateway software can allow businesses to securely accept
-							payments online. It can support various payment methods, such as credit card, debit card,
-							and PayPal, and provide a seamless checkout experience for customers.</li>
-						<li>Live Chat Software: A live chat software can enable businesses to provide real-time customer
-							support through their website. It can allow customers to chat with support agents, ask
-							questions, and get instant help, improving customer satisfaction and reducing response
-							times.</li>
-
-					</ul>
-					</p>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
-	<div class="container" >
-		<div class="row " style="margin-top: 59px; margin-bottom: 59px;margin-left: -100px; margin-right: -100px; border-radius: 5px;">
-		  <div class="col-md-4" style="margin-right: -15px;">
-			<img src="https://www.cssinfotech.in/assets/img/1566550914476.jpg" alt="" style="height:100%; width: 100%; object-fit: cover; border-top-left-radius: 10px;  border-bottom-left-radius: 10px;"/>
 		  </div>
-		  <div class="col-md-8 d-flex align-items-center" style="margin-left: -15px;">
-			<div style="padding: 20px; background-color: #d4e1e1; border-top-right-radius: 10px;  border-bottom-right-radius: 10px;">
-			  <p style="font-family: Arial, sans-serif; font-size: 18px; font-weight: 500; line-height: 1.6em; color: #333;">
-				There are several software solutions available that can help streamline processes, improve customer experience, and boost business efficiency. Here are some popular options:
-			  </p>
-			  <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 0;">
-				<li style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; color: #555;">Customer Relationship Management (CRM) Software: A CRM software helps businesses manage their interactions with customers, clients, and prospects. It can provide a comprehensive view of all customer interactions, from initial contact to post-sales support, enabling businesses to provide personalized service and build long-term relationships.</li>
-				<li style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; color: #555;">Content Management System (CMS) Software: A CMS software allows businesses to create, manage, and publish digital content on their websites. It provides a user-friendly interface for non-technical users to manage website content and can support multiple contributors.</li>
-				<li style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; color: #555;">Project Management Software: A project management software can help service-based businesses manage their projects, from planning to execution and delivery. It can provide tools for task management, team collaboration, time tracking, and resource allocation.</li>
-				<li style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; color: #555;">Online Booking and Scheduling Software: An online booking and scheduling software can allow businesses to automate their appointment scheduling and booking processes. It can enable customers to book appointments online, receive automated confirmations and reminders, and manage their bookings.</li>
-				<li style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; color: #555;">Payment Gateway Software: A payment gateway software can allow businesses to securely accept payments online. It can support various payment methods, such as credit card, debit card, and PayPal, and provide a seamless checkout experience for customers.</li>
-				<li style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; color: #555;">Live Chat Software: A live chat software can enable businesses to provide real-time customer support through their website. It can allow customers to chat with support agents, ask questions, and get instant help, improving customer satisfaction and reducing response times.</li>
-			  </ul>
+		</section>
+	   <div
+		  style="
+			margin-top: 59px;
+			margin-left: 20px;
+			margin-right: 20px;
+			display: flex;
+		  "
+		>
+		  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+			<div class="md:flex">
+			  <div class="md:w-1/3">
+				<img
+				  src="./images/softwareimage.jpg"
+				  alt="Placeholder Image"
+				  class="h-auto w-full object-cover"
+				  style="max-height: 400px; width: -webkit-fill-available"
+				/>
+			  </div>
+			  <div class="p-4 md:w-2/3">
+				<p style="font-family: Arial, sans-serif; font-size: 18px; font-weight: 500; line-height: 1.6em; color: #333;">
+					There are several software solutions available that can help streamline processes, improve customer experience, and boost business efficiency. Here are some popular options:
+				  </p>
+				  <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 0;">
+					<li style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; color: #555;">Customer Relationship Management (CRM) Software: A CRM software helps businesses manage their interactions with customers, clients, and prospects. It can provide a comprehensive view of all customer interactions, from initial contact to post-sales support, enabling businesses to provide personalized service and build long-term relationships.</li>
+					<li style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; color: #555;">Content Management System (CMS) Software: A CMS software allows businesses to create, manage, and publish digital content on their websites. It provides a user-friendly interface for non-technical users to manage website content and can support multiple contributors.</li>
+					<li style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; color: #555;">Project Management Software: A project management software can help service-based businesses manage their projects, from planning to execution and delivery. It can provide tools for task management, team collaboration, time tracking, and resource allocation.</li>
+					<li style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; color: #555;">Online Booking and Scheduling Software: An online booking and scheduling software can allow businesses to automate their appointment scheduling and booking processes. It can enable customers to book appointments online, receive automated confirmations and reminders, and manage their bookings.</li>
+					<li style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; color: #555;">Payment Gateway Software: A payment gateway software can allow businesses to securely accept payments online. It can support various payment methods, such as credit card, debit card, and PayPal, and provide a seamless checkout experience for customers.</li>
+					<li style="font-family: Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 1.6em; color: #555;">Live Chat Software: A live chat software can enable businesses to provide real-time customer support through their website. It can allow customers to chat with support agents, ask questions, and get instant help, improving customer satisfaction and reducing response times.</li>
+				  </ul>
+				<a
+				  href="#"
+				  class="text-white bg-blue-500 hover:bg-blue-600 py-2 px-4 rounded"
+				  >Learn More</a
+				>
+			  </div>
 			</div>
 		  </div>
 		</div>
-	  </div
-	  
-	  
+	</div>
 
 	<!-- main page task end  -->
 
 	<!-- footer Start -->
-	<footer class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="footer-manu">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="about">About Us</a></li>
-							<li><a href="contact">Contact us</a></li>
-							<li><a href="service.html">Our Services</a></li>
-							<li><a href="blogs">Blog Posts</a></li>
-						</ul>
-					</div>
-					<p class="copyright mb-0">Copyright
-						<script>document.write(new Date().getFullYear())</script> &copy; Designed & Developed by <a
-							href="http://www.themefisher.com">@APM-Pune</a>. All rights reserved.
-					</p>
-				</div>
+    <footer>
+		<div class="footer-container">
+		  <div class="footer-column">
+			<h3 class="footer-h3">Follow Us</h3>
+			<div class="social-icons">
+			  <a href="https://wa.me/919861393191">
+				<img
+				  src="./images/whatsapp.png"
+				  alt=""
+				  style="
+					width: 50px;
+					height: 50px;
+					z-index: 1000;
+					border-radius: 50%;
+				  "
+				/> </a>
+				<a href="https://wa.me/919861393191">
+				  <img
+					src="./images/linked  in.png"
+					alt=""
+					style="
+					  width: 55px;
+					  height: 55px;
+					  z-index: 1000;
+					  border-radius: 50%;
+					"
+				  /> </a>
+				  <a href="https://wa.me/919861393191">
+					<img
+					  src="./images/instagram.jpg"
+					  alt=""
+					  style="
+						width: 60px;
+						height: 60px;
+						z-index: 1000;
+						border-radius: 50%;
+					  "
+					/> </a>
 			</div>
+		  </div>
+		  <div class="footer-column">
+			<h3 class="footer-h3">Explore</h3>
+			<ul class="vertical-tabs">
+			  <li><a href="./about.html">About Us</a></li>
+			  <li><a href="./index.html">Our Services</a></li>
+			  <li><a href="./career.html">Careers</a></li>
+			  <li><a href="./contact.html">Contact Us</a></li>
+			</ul>
+		  </div>
+		  <div class="footer-column">
+			<h3 class="footer-h3">Get in Touch</h3>
+			<div class="get-in-touch">
+			  <p style="color: black !important;">Aarambh, Moshi-Alandi Road, Pune<p>
+			  <p style="color: black !important;">Pune , Maharastra </p>
+			  <p style="color: black !important;">Phone: 8885937030 , 9136002477</p>
+			  <p style="color: black !important;">Email: support@vaishnaviinfotech.in</p>
+			</div>
+		  </div>
 		</div>
-	</footer>
+	  </footer>
+  
 
 	<!--Scroll to top-->
 	<div id="scroll-to-top" class="scroll-to-top">
